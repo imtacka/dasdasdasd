@@ -1,0 +1,34 @@
+{
+  "swezyq1": {
+    "available": 980,
+    "pending": 0,
+    "total_credited": 980,
+    "total_fees": 20,
+    "credits": [
+      {
+        "deal_id": "1780492685",
+        "seller": "@Swezyq1",
+        "gross": 1000,
+        "fee": 20,
+        "net": 980,
+        "created_at": 1780493062
+      }
+    ]
+  },
+  "imtacka": {
+    "available": 0,
+    "pending": 392,
+    "total_credited": 196,
+    "total_fees": 4,
+    "credits": [
+      {
+        "deal_id": "1780499815",
+        "seller": "@imtacka",
+        "gross": 200,
+        "fee": 4,
+        "net": 196,
+        "created_at": 1780500100
+      }
+    ]
+  }
+}

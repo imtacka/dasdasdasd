@@ -1,0 +1,38 @@
+{
+  "imtacka": {
+    "name": "@imtacka",
+    "blocked": false,
+    "blocked_reason": "",
+    "created_deals": [
+      1780657978,
+      1780657982,
+      1780657987
+    ],
+    "payout_details": "1111 1111 1111 1111, Иван Петров",
+    "chat_id": 5783661880
+  },
+  "1834648817": {
+    "name": "1834648817",
+    "blocked": false,
+    "blocked_reason": "",
+    "created_deals": [
+      1780658720
+    ],
+    "chat_id": 1834648817
+  },
+  "bo0bsik": {
+    "name": "@bo0bsik",
+    "blocked": false,
+    "blocked_reason": "",
+    "created_deals": [],
+    "payout_details": "1111 1111 1111 1111, спериса"
+  },
+  "dev": {
+    "name": "@dev",
+    "chat_id": 5783661880,
+    "blocked": false,
+    "blocked_reason": "",
+    "created_deals": [],
+    "payout_details": "4444 4444 4444 4444"
+  }
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Garant Mini App</title>
+    <link rel="stylesheet" href="/app/styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Telegram Mini App</p>
+          <h1>Garant</h1>
+          <p class="muted" id="appStatus">API: загрузка...</p>
+        </div>
+        <button class="icon-btn" id="refreshBtn" type="button" title="Обновить">↻</button>
+      </header>
+
+      <nav class="tabs" aria-label="Разделы">
+        <button class="tab active" data-view="deals" type="button">Сделки</button>
+        <button class="tab" data-view="create" type="button">Новая</button>
+        <button class="tab" data-view="join" type="button">Войти</button>
+        <button class="tab" data-view="profile" type="button">Профиль</button>
+        <button class="tab admin-only" data-view="admin" type="button" hidden>Админ</button>
+      </nav>
+
+      <section class="view active" id="dealsView">
+        <div class="toolbar">
+          <label class="search">
+            <span>Поиск</span>
+            <input id="dealSearch" type="search" placeholder="ID, предмет, участник">
+          </label>
+          <select id="statusFilter" aria-label="Статус">
+            <option value="">Все статусы</option>
+            <option value="awaiting_acceptance">Ждет согласия</option>
+            <option value="waiting_payment">Ждет оплату</option>
+            <option value="paid">Оплачено</option>
+            <option value="shipping_review">Проверка передачи</option>
+            <option value="receive_review">Проверка принятия</option>
+            <option value="dispute">Спор</option>
+            <option value="released">Завершены</option>
+          </select>
+        </div>
+        <div class="deal-list" id="dealList"></div>
+      </section>
+
+      <section class="view" id="createView">
+        <form class="panel form" id="createForm">
+          <div class="segmented" role="radiogroup" aria-label="Моя роль">
+            <label>
+              <input checked name="creatorRole" type="radio" value="buyer">
+              <span>Я покупатель</span>
+            </label>
+            <label>
+              <input name="creatorRole" type="radio" value="seller">
+              <span>Я продавец</span>
+            </label>
+          </div>
+          <div class="segmented" role="radiogroup" aria-label="Тип сделки">
+            <label>
+              <input checked name="dealType" type="radio" value="digital">
+              <span>Цифровой товар</span>
+            </label>
+            <label>
+              <input name="dealType" type="radio" value="service">
+              <span>Услуга</span>
+            </label>
+          </div>
+          <label>
+            <span>Предмет сделки</span>
+            <input name="item" required maxlength="90" placeholder="Аккаунт, ключ, дизайн, настройка">
+          </label>
+          <div class="amount-row">
+            <label>
+              <span>Сумма</span>
+              <input name="amountValue" required type="number" min="10" max="10000" step="0.01" inputmode="decimal" placeholder="250">
+            </label>
+            <label>
+              <span>Валюта</span>
+              <select name="currency">
+                <option value="UAH">UAH · гривна</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>Username второй стороны</span>
+            <input name="counterparty" required placeholder="@username">
+          </label>
+          <label>
+            <span>Условия успеха</span>
+            <textarea name="successTerms" required rows="4" placeholder="Что должно быть передано и как понять, что сделка выполнена"></textarea>
+          </label>
+          <label>
+            <span>Время проверки</span>
+            <input name="inspectionTime" required placeholder="24 часа после передачи">
+          </label>
+          <button class="primary wide" type="submit">Создать сделку</button>
+        </form>
+      </section>
+
+      <section class="view" id="joinView">
+        <form class="panel form" id="joinForm">
+          <label>
+            <span>ID сделки</span>
+            <input name="dealId" required inputmode="numeric" placeholder="1780483551">
+          </label>
+          <button class="primary wide" type="submit">Подключиться</button>
+        </form>
+      </section>
+
+      <section class="view" id="profileView">
+        <div class="panel profile">
+          <div>
+            <p class="muted">Аккаунт</p>
+            <h2 id="profileName">...</h2>
+          </div>
+          <div class="stats">
+            <div><strong id="statTotal">0</strong><span>всего</span></div>
+            <div><strong id="statActive">0</strong><span>активно</span></div>
+            <div><strong id="statDone">0</strong><span>закрыто</span></div>
+            <div><strong id="statDisputes">0</strong><span>споры</span></div>
+          </div>
+          <div class="balance">
+            <div><span>Доступно</span><strong id="balanceAvailable">0 грн</strong></div>
+            <div><span>В заявках</span><strong id="balancePending">0 грн</strong></div>
+            <div><span>Всего зачислено</span><strong id="balanceTotal">0 грн</strong></div>
+          </div>
+          <label>
+            <span>Реквизиты для вывода</span>
+            <textarea id="payoutDetails" rows="3" placeholder="Карта/IBAN и имя получателя"></textarea>
+          </label>
+          <div class="row-actions">
+            <button class="secondary" id="saveProfileBtn" type="button">Сохранить</button>
+            <button class="primary" id="withdrawBtn" type="button">Вывести</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="adminView">
+        <div class="panel form">
+          <h2>Админ-панель</h2>
+          <div class="stats">
+            <div><strong id="adminActive">0</strong><span>активно</span></div>
+            <div><strong id="adminReview">0</strong><span>проверка</span></div>
+            <div><strong id="adminDisputes">0</strong><span>споры</span></div>
+            <div><strong id="adminPayouts">0</strong><span>выплаты</span></div>
+          </div>
+        </div>
+        <div class="deal-list" id="withdrawalList"></div>
+      </section>
+    </main>
+
+    <dialog id="dealDialog">
+      <form method="dialog" class="dialog-shell">
+        <header>
+          <div>
+            <p class="eyebrow" id="dialogRole">Сделка</p>
+            <h2 id="dialogTitle">...</h2>
+          </div>
+          <button class="icon-btn" value="close" title="Закрыть" type="submit">×</button>
+        </header>
+        <div class="status-line">
+          <span class="badge" id="dialogStatus">...</span>
+          <span id="dialogAmount"></span>
+        </div>
+        <dl class="details">
+          <div><dt>Покупатель</dt><dd id="dialogBuyer"></dd></div>
+          <div><dt>Продавец</dt><dd id="dialogSeller"></dd></div>
+          <div><dt>ID для входа</dt><dd><code id="dialogJoinId"></code></dd></div>
+          <div><dt>Проверка</dt><dd id="dialogInspection"></dd></div>
+          <div><dt>Условия</dt><dd id="dialogTerms"></dd></div>
+        </dl>
+        <div class="payment-box" id="paymentBox"></div>
+        <div class="timeline" id="timeline"></div>
+        <div class="action-grid" id="dialogActions"></div>
+      </form>
+    </dialog>
+
+    <dialog id="textDialog">
+      <form class="dialog-shell" id="textActionForm">
+        <header>
+          <div>
+            <p class="eyebrow">Действие</p>
+            <h2 id="textDialogTitle">Комментарий</h2>
+          </div>
+          <button class="icon-btn" value="cancel" formmethod="dialog" type="submit">×</button>
+        </header>
+        <textarea id="actionText" rows="5" required placeholder="Введи текст"></textarea>
+        <button class="primary wide" type="submit">Отправить</button>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast"></div>
+    <script src="/app/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+{
+  "1780478167": {
+    "id": "1780478167",
+    "item": "Аккаунт",
+    "amount": "100 usd",
+    "success_terms": "Получение товара",
+    "inspection_time": "1 час",
+    "buyer": "@imtacka",
+    "seller": "@vv1add",
+    "creator_chat_id": 5783661880,
+    "status": "released",
+    "proofs": [],
+    "created_at": 1780478167,
+    "buyer_chat_id": 5783661880,
+    "seller_chat_id": null,
+    "buyer_key": "imtacka",
+    "seller_key": "vv1add",
+    "confirmations": {
+      "buyer_terms": false,
+      "seller_terms": false
+    },
+    "seller_shipped": true,
+    "buyer_received": true,
+    "seller_payout_details": null,
+    "payout": {},
+    "chat": [],
+    "admin_reviews": {},
+    "events": [],
+    "admin_notes": [],
+    "ratings": {},
+    "reminders": {},
+    "deal_type": "digital",
+    "handoff": null
+  },
+  "1780481749": {
+    "id": "1780481749",
+    "item": "iPhone 14 Pro 256GB",
+    "amount": "10 грн",
+    "success_terms": "Без блокировок, Face ID работает, батарея от 85%",
+    "inspection_time": "24 часа после получения",
+    "buyer": "@imtacka",
+    "buyer_key": "imtacka",
+    "buyer_chat_id": 5783661880,
+    "seller": "@Swezyq1",
+    "seller_key": "swezyq1",
+    "seller_chat_id": 1113886459,
+    "status": "released",
+    "confirmations": {
+      "buyer_terms": true,
+      "seller_terms": true
+    },
+    "proofs": [],
+    "created_at": 1780481749,
+    "seller_shipped": true,
+    "buyer_received": true,
+    "payment": {
+      "provider": "monobank",
+      "invoiceId": "2606033JK6i2B6j44Go8",
+      "pageUrl": "https://pay.monobank.ua/2606033JK6i2B6j44Go8",
+      "amount": 1000,
+      "ccy": 980,
+      "paymentType": "hold",
+      "status": "success",
+      "created_at": 1780481769,
+      "finalAmount": 1000,
+      "failureReason": null,
+      "updated_at": 1780481819,
+      "finalized_at": 1780481819
+    },
+    "seller_payout_details": null,
+    "payout": {},
+    "chat": [],
+    "admin_reviews": {},
+    "events": [],
+    "admin_notes": [],
+    "ratings": {},
+    "reminders": {},
+    "deal_type": "digital",
+    "handoff": null
+  },
+  "1780482377": {
+    "id": "1780482377",
+    "item": "iPhone 14 Pro 256GB",
+    "amount": "520 грн",
+    "success_terms": "Без блокировок, Face ID работает, батарея от 85%",
+    "inspection_time": "24 часа после получения",
+    "buyer": "@imtacka",
+    "buyer_key": "imtacka",
+    "buyer_chat_id": 5783661880,
+    "seller": "@Swezyq1",
+    "seller_key": "swezyq1",
+    "seller_chat_id": 1113886459,
+    "status": "released",
+    "confirmations": {
+      "buyer_terms": true,
+      "seller_terms": true
+    },
+    "proofs": [],
+    "created_at": 1780482377,
+    "seller_shipped": true,
+    "buyer_received": true,
+    "seller_payout_details": "4444 4123 1221 никита білик",
+    "payment": {
+      "provider": "monobank",
+      "invoiceId": "26060352VPawrCWQCcDY",
+      "pageUrl": "https://pay.monobank.ua/26060352VPawrCWQCcDY",
+      "amount": 52000,
+      "ccy": 980,
+      "paymentType": "hold",
+      "status": "success",
+      "created_at": 1780482392,
+      "finalAmount": 52000,
+      "failureReason": null,
+      "updated_at": 1780482491,
+      "finalized_at": 1780482491
+    },
+    "payout": {
+      "status": "paid_manual",
+      "created_at": 1780482491,
+      "amount": "520 грн",
+      "paid_at": 1780482621,
+      "admin_chat_id": 5783661880
+    },
+    "chat": [],
+    "admin_reviews": {},
+    "events": [],
+    "admin_notes": [],
+    "ratings": {},
+    "reminders": {},
+    "deal_type": "digital",
+    "handoff": null
+  },
+  "1780483551": {
+    "id": "1780483551",
+    "item": "iPhone 14 Pro 256GB",
+    "amount": "520 грн",
+    "success_terms": "Без блокировок, Face ID работает, батарея от 85%",
+    "inspection_time": "24 часа после получения",
+    "buyer": "@imtacka",
+    "buyer_key": "imtacka",
+    "buyer_chat_id": 5783661880,
+    "seller": "@Swezyq1",
+    "seller_key": "swezyq1",
+    "seller_chat_id": 1113886459,
+    "status": "released",
+    "confirmations": {
+      "buyer_terms": true,
+      "seller_terms": true
+    },
+    "proofs": [],
+    "created_at": 1780483551,
+    "seller_shipped": true,
+    "buyer_received": true,
+    "seller_payout_details": "5168 **** **** 1234, Иван Петров",
+    "payout": {
+      "status": "paid_manual",
+      "created_at": 1780483634,
+      "amount": "520 грн",
+      "receipt": "рот єбав твій",
+      "receipt_added_at": 1780483656,
+      "paid_at": 1780483659,
+      "admin_chat_id": 5783661880
+    },
+    "payment": {
+      "provider": "monobank",
+      "invoiceId": "2606037XdvG6uhEYDHyC",
+      "pageUrl": "https://pay.monobank.ua/2606037XdvG6uhEYDHyC",
+      "amount": 52000,
+      "ccy": 980,
+      "paymentType": "hold",
+      "status": "success",
+      "created_at": 1780483570,
+      "finalAmount": 52000,
+      "failureReason": null,
+      "updated_at": 1780483634,
+      "finalized_at": 1780483634
+    },
+    "chat": [],
+    "admin_reviews": {},
+    "events": [
+      {
+        "at": 1780657101,
+        "actor": "покупатель",
+        "title": "оставил оценку 5/5",
+        "details": ""
+      }
+    ],
+    "admin_notes": [],
+    "ratings": {
+      "buyer": {
+        "rating": 5,
+        "from": "@dev",
+        "at": 1780657101
+      }
+    },
+    "reminders": {},
+    "deal_type": "digital",
+    "handoff": null
+  },
+  "1780492685": {
+    "id": "1780492685",
+    "item": "Penis dildo",
+    "amount": "10 грн",
+    "success_terms": "Передача дилдо",
+    "inspection_time": "24 часа",
+    "buyer": "1834648817",
+    "buyer_key": "1834648817",
+    "buyer_chat_id": 1834648817,
+    "seller": "@Swezyq1",
+    "seller_key": "swezyq1",
+    "seller_chat_id": 1113886459,
+    "status": "released",
+    "confirmations": {
+      "buyer_terms": true,
+      "seller_terms": true
+    },
+    "proofs": [
+      "@Swezyq1: ",
+      "@Swezyq1: хуй"
+    ],
+    "created_at": 1780492685,
+    "seller_shipped": true,
+    "buyer_received": true,
+    "seller_payout_details": "5168 **** **** 1234, Иван Петров\\",
+    "payout": {},
+    "chat": [
+      {
+        "from": "buyer",
+        "name": "1834648817",
+        "text": "Хуесос",
+        "at": 1780492891
+      },
+      {
+        "from": "seller",
+        "name": "@Swezyq1",
+        "text": "пидар",
+        "at": 1780492894
+      },
+      {
+        "from": "seller",
+        "name": "@Swezyq1",
+        "text": "я тебе в очко виебу",
+        "at": 1780492900
+      }
+    ],
+    "admin_reviews": {
+      "ship_requested": true,
+      "ship_approved": true,
+      "receive_requested": true,
+      "receive_approved": true
+    },
+    "payment": {
+      "provider": "monobank",
+      "invoiceId": "260603CF2aoKwm6uTZja",
+      "pageUrl": "https://pay.monobank.ua/260603CF2aoKwm6uTZja",
+      "amount": 1000,
+      "ccy": 980,
+      "paymentType": "hold",
+      "status": "success",
+      "created_at": 1780492920,
+      "finalAmount": 1000,
+      "failureReason": null,
+      "updated_at": 1780493062,
+      "finalized_at": 1780493062
+    },
+    "balance_credit": {
+      "deal_id": "1780492685",
+      "seller": "@Swezyq1",
+      "gross": 1000,
+      "fee": 20,
+      "net": 980,
+      "created_at": 1780493062
+    },
+    "events": [],
+    "admin_notes": [],
+    "ratings": {},
+    "reminders": {},
+    "deal_type": "digital",
+    "handoff": null
+  },
+  "1780593408": {
+    "id": "1780593408",
+    "deal_type": "digital",
+    "item": "Аккаунт Counter Strike 2",
+    "amount": "20 грн",
+    "success_terms": "Данные подходят для входа",
+    "inspection_time": "1 час после передачи",
+    "buyer": "1834648817",
+    "buyer_key": "1834648817",
+    "buyer_chat_id": 1834648817,
+    "seller": "@bo0bsik",
+    "seller_key": "bo0bsik",
+    "seller_chat_id": 204131586,
+    "status": "refunded",
+    "confirmations": {
+      "buyer_terms": true,
+      "seller_terms": true
+    },
+    "proofs": [],
+    "created_at": 1780593408,
+    "events": [
+      {
+        "at": 1780593408,
+        "actor": "1834648817",
+        "title": "создал сделку",
+        "details": "Аккаунт Counter Strike 2"
+      },
+      {
+        "at": 1780593766,
+        "actor": "покупатель",
+        "title": "подтвердил условия",
+        "details": ""
+      },
+      {
+        "at": 1780593768,
+        "actor": "продавец",
+        "title": "подтвердил условия",
+        "details": ""
+      },
+      {
+        "at": 1780593777,
+        "actor": "покупатель",
+        "title": "создал счет Monobank",
+        "details": ""
+      },
+      {
+        "at": 1780593804,
+        "actor": "покупатель",
+        "title": "проверил оплату",
+        "details": ""
+      },
+      {
+        "at": 1780594046,
+        "actor": "продавец",
+        "title": "открыл спор",
+        "details": "не соответствует условиям"
+      },
+      {
+        "at": 1780594086,
+        "actor": "продавец",
+        "title": "открыл спор",
+        "details": "подозрение на мошенничество"
+      },
+      {
+        "at": 1780594094,
+        "actor": "продавец",
+        "title": "открыл спор",
+        "details": "не соответствует условиям"
+      },
+      {
+        "at": 1780594097,
+        "actor": "продавец",
+        "title": "открыл спор",
+        "details": "другая причина"
+      },
+      {
+        "at": 1780594098,
+        "actor": "admin",
+        "title": "открыл спор",
+        "details": ""
+      },
+      {
+        "at": 1780594104,
+        "actor": "admin",
+        "title": "решил спор: возврат покупателю",
+        "details": ""
+      }
+    ],
+    "handoff": null,
+    "seller_shipped": false,
+    "buyer_received": false,
+    "seller_payout_details": null,
+    "payout": {},
+    "chat": [],
+    "admin_reviews": {},
+    "admin_notes": [],
+    "ratings": {},
+    "reminders": {
+      "accept": 1780593759
+    },
+    "payment": {
+      "provider": "monobank",
+      "invoiceId": "260604E3UXjA4XEw5byr",
+      "pageUrl": "https://pay.monobank.ua/260604E3UXjA4XEw5byr",
+      "amount": 2000,
+      "ccy": 980,
+      "paymentType": "hold",
+      "status": "hold",
+      "created_at": 1780593777,
+      "finalAmount": null,
+      "failureReason": null,
+      "updated_at": 1780593804
+    },
+    "dispute": {
+      "reason": "other",
+      "reason_text": "другая причина",
+      "opened_by": "seller",
+      "opened_at": 1780594097
+    },
+    "dispute_resolution": {
+      "result": "refund",
+      "at": 1780594104
+    }
+  }
+}
